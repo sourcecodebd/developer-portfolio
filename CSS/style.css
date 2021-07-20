@@ -1,0 +1,113 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+p{
+    text-align: justify;
+}
+.flexible-container{
+    display: flex;
+    margin-bottom: 100px
+}
+.padding-left{
+    padding-left: 5%;
+}
+.top-banner{
+    background-image: url(../images/top-banner.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.dream-big{
+    background-image: url(../images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+.experience-area{
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left; 
+    background-size: auto;
+}
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%
+}
+.half-width img{
+    width: 90%;
+    padding-top: 8%;
+}
+.orange{
+    color: orange;
+}
+.purple{
+    color:rgb(143, 31, 207)
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(rgb(255, 153, 0), tomato);
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#pro-dev-experience{
+    border-left: 7px solid;
+    border-image: linear-gradient(red,rgb(255, 153, 0));
+    border-image-slice: 1
+}
+#baby-dev-experience{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1
+}
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body, .box, .half-width, .top-banner, .dream-big {
+        font-size: 12px;
+        width: 96%; /* The width is 100%, when the viewport is 800px or smaller */
+        display: inline-block;
+        margin-right:0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .experience-area, #pro-dev-experience, #baby-dev-experience, footer {
+        font-size: 12px;
+        display: block;
+        width: auto
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h2, h3 {
+        font-size: 12px;
+    }
+  }
